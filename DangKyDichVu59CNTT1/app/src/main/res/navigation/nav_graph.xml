@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_Main">
+    <fragment
+        android:id="@+id/fragment_Main"
+        android:name="vn.edu.ntu.nhatthien.dangkydichvu59cntt1.Fragment_Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragment_Main_to_fragment_Results_Registration"
+            app:destination="@id/fragment_Results_Registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Results_Registration"
+        android:name="vn.edu.ntu.nhatthien.dangkydichvu59cntt1.Fragment_Results_Registration"
+        android:label="fragment_results_registration"
+        tools:layout="@layout/fragment_results_registration" >
+        <action
+            android:id="@+id/action_fragment_Results_Registration_to_fragment_Main"
+            app:destination="@id/fragment_Main" />
+    </fragment>
+</navigation>
